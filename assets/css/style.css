@@ -95,6 +95,18 @@ a{
 .header-wrap .menu ul li a:hover{
     color: var(--primaryColor);
 }
+.menu-bars, .close-btn{
+    display:none;
+}
+.mobile-menu{
+    display:block;
+}
+.menu-bars i, .close-btn i {
+    color: var(--primaryColor);
+    font-size: 30px;
+    border: 2px solid var(--primaryColor);
+    padding: 5px 10px;
+}
 /* header-section */
 
 /* hero-section */

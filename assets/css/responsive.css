@@ -14,11 +14,15 @@
     .hero-image-content::before {
         bottom: -8%;
     }
+    .header-wrap .menu ul li {
+        padding-left: 30px;
+    }
     .title h2 {
         font-size: 50px;
         font-weight: 500;
         line-height: 60px;
     }
+    /* feature  */
     .feature-wrap {
         grid-template-columns: 1fr 1fr;
     }
@@ -79,6 +83,28 @@
     }
     /* header */
     .header-wrap .menu ul li {
+        padding-left: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu li {
+        display: block;
+        padding: 10px 20px;
+    }
+    .menu-bars{
+        display:block;
+    }
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        right: 24px;
+        top: 22%;
+        background: var(--whiteColor);
+        padding: 20px;
+        box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.1);
+    }
+    .header-wrap .menu ul li:first-child {
         padding-left: 20px;
     }
     /* hero  */
