@@ -1,0 +1,262 @@
+
+@media only screen and (max-width: 1200px) {
+    .our-product {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 989px) {
+    /* hero  */
+    .hero-content h1 {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 70px;
+    }
+    .hero-image-content::before {
+        bottom: -8%;
+    }
+    .title h2 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+    }
+    .feature-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* food  */
+    .food-variety {
+        gap: 30px;
+    }
+    .single-food-variety.flex {
+        flex-direction: column;
+    }
+    .food-variety-img, .food-variety-content {
+        width: 100%;
+    }
+    .food-variety-img {
+        order: 1;
+    }
+    .food-variety-content {
+        order: 2;
+    }
+    .food-details {
+        padding: 30px;
+    }
+    /* product  */
+    .our-product {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* ingredients */
+    .ingredients-content {
+        padding: 0px 100px;
+    }
+    /* footer  */
+    .pre-footer.flex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-logo, .footer-form, .footer-menu{
+        width:100%;
+    } 
+    form {
+        justify-content: center;
+    }
+    .footer p {
+        padding: 40px 0px;
+    }
+}
+
+/* 767px */
+@media only screen and (max-width: 767px) {
+    /* title  */
+    .title h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    /* common btn  */
+    .common-btn, .discover-btn, .buy-btn {
+        display: block;
+    }
+    /* header */
+    .header-wrap .menu ul li {
+        padding-left: 20px;
+    }
+    /* hero  */
+    .hero-section {
+        padding: 0px;
+        height: 100%;
+    }
+    .hero-section .hero-wrap.flex {
+        height: 100%;
+        flex-direction: column;
+    }
+    .hero-wrap .hero-content, .hero-wrap .hero-image-content {
+        width: 100%;
+    }
+    .hero-content {
+        text-align: center;
+        padding-top: 25px;
+    }
+    .hero-image {
+        position: relative;
+        top: 100px;
+    }
+    .hero-content h1 {
+        font-size: 51px;
+        line-height: 61px;
+    }
+    
+    .rating {
+        top:98%;
+        left: 50%;
+        transform: translate(-50%, 0%);      
+        z-index:7;
+    }
+    .quality-product {
+        top: 106%;
+        right: 50%;
+        transform: translate(50%, 0%);
+        padding: 5px 26px 5px 5px;
+        z-index: 7;
+    }
+    /* brand  */
+    .brand-logo-section {
+        padding: 150px 0px 50px;
+    }
+    .brand-logo-wrap {
+        width: 100%;
+    }
+    /* feature */
+    .feature-wrap {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    .feature-content-wrap.flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    /* benefit  */
+    .benefit-wrap.flex, .benefit-wrap.flex, .our-stars-wrap.flex  {
+        flex-direction: column;
+    }
+    .benefit-img, .benefit-content, .stars-content, .stars-img {
+        width: 100%;
+    }
+    .benefit-img, .stars-img {
+        background-color: var(--bgColor2);
+    }
+    .benefit-content .title {
+        text-align: center;
+    }
+    .benefit-content ul {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .benefit-img img {
+        margin-bottom: 0px;
+        position: relative;
+        top: -50px;
+    }
+
+    /* star  */    
+    .stars-content {
+        order: 1;
+    }
+    .stars-content {
+        text-align: center;
+        order: 2;
+    }
+    .stars-img img {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        position: relative;
+        top: -50px;
+    }
+    /* product  */
+    .our-product {
+        gap: 19px;
+    }
+    /* ingredients */
+    .ingredients-content {
+        padding: 0px 50px;
+    }
+    .ingredients-content h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* 575px  */
+@media only screen and (max-width: 575px) {
+    .brand-logo-wrap ul.flex {
+        row-gap: 20px;
+        column-gap: 53px;
+        justify-content: center;
+    }
+    /* hero  */
+    .hero-image-content::before {
+        bottom: -16%;
+    }
+    .rating {
+        display: block;
+        width:250px;
+    }
+    .quality-product {
+        display: block;
+        width:250px;
+        top:107%;
+    }
+    /* star  */
+    .feedback.flex {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    /* food  */
+    .food-variety {
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+    .discover-btn, .buy-btn {
+        display: inline-block;
+    }
+    /* product  */
+    .our-products-wrap .title {
+        text-align: center;
+    }
+    .our-product {
+        grid-template-columns: 1fr;
+    }
+    /* ingredients */
+    .ingredients-content h2 {
+        font-size: 35px;
+        line-height: 42.36px;
+    }
+    /* footer  */
+    form {
+        flex-direction: column;
+    }
+    input#email {
+        text-align: center;
+    }
+    input[type="submit"] {
+        margin: 10px 0px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .hero-image-content::before {
+        bottom: -25%;
+    }
+    .quality-product {
+        top: 115%;
+    }
+    .footer-menu.flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-menu, .Company-menu {
+        width: 100%;
+    }
+}

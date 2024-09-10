@@ -1,0 +1,524 @@
+/* global css  */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Inter", system-ui;
+    color: var(--textColor);
+}
+*:focus {
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--blackishColor);
+    text-transform: capitalize;
+}
+.container{
+    max-width: 1220px;
+    padding: 0px 25px;
+    margin: 0 auto;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.common-btn, .discover-btn, .buy-btn{
+    background-color: var(--primaryColor);
+    padding: 15px 20px;
+    color: var(--whiteColor);
+    display:inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.common-btn:hover, .discover-btn:hover, .buy-btn:hover{
+    background-color: var(--blackishColor);
+}
+.common-btn i, .discover-btn i{
+    color: var(--whiteColor);
+    padding-left: 5px;
+}
+.title h5 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.15px;
+    color: var(--blackishColor);
+    padding-bottom: 20px;
+}
+.title h2{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72.61px;
+}
+/* global css  */
+
+/* header-section */
+.header-section, .hero-section{
+    width: 100%;
+    background-color: var(--bgColor);
+    padding: 20px 0px;
+}
+.header-section .header-wrap{
+    width: 100%;
+}
+.logo h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.73px;
+    color: var(--primaryColor);
+}
+.header-wrap .menu ul li{
+    padding-left: 50px;
+}
+.header-wrap .menu ul li:first-child{
+    padding-left: 0px;
+}
+.header-wrap .menu ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    display: block;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.header-wrap .menu ul li a:hover{
+    color: var(--primaryColor);
+}
+/* header-section */
+
+/* hero-section */
+.hero-section{
+    padding: 0px;
+    height:600px;
+}
+.hero-section .hero-wrap{
+    width:100%;
+}
+.hero-section .hero-wrap.flex{
+    height: 600px;
+}
+.hero-wrap .hero-content, .hero-wrap .hero-image-content{
+    width:45%;
+}
+.hero-content h1{
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 90.77px;
+}
+.hero-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.78px;
+    padding: 20px 0px 27px;
+}
+.hero-image-content{
+    position: relative;
+    height:100%;
+}
+.hero-image-content::before {
+    content: "";
+    background-image: url(../img/Polcadot.png);
+    position: absolute;
+    bottom: -17%;
+    right: 0%;
+    z-index: 5;
+    height: 176px;
+    width: 176px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.hero-image {
+    position: absolute;
+    top: 13%;
+    left:0%;
+}
+.hero-image img {
+    width:100%;
+}
+.rating, .quality-product{
+    display: inline-block;
+    background-color: var(--whiteColor);
+    padding: 12px 15px;
+    border-radius: 50px;
+    position: absolute;
+}
+.rating {
+    top: 60%;
+    left: -17%;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.1);
+}
+.rating p, .quality-product p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.15px;
+    text-transform: capitalize;
+    color: var(--blackishColor);
+}
+.rating p{
+    margin-right:8px;
+}
+.star-icon i{
+    color: var(--primaryColor);
+    padding-left: 5px;
+}
+.quality-product {
+    top: 44%;
+    right: 0%;
+    padding: 5px 15px 5px 5px;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.1);
+}
+.quality-product img{
+    width:40px;    
+    margin-right: 10px;
+}
+/* hero-section */
+
+
+/* brand-logo-section */
+.brand-logo-section {
+    width: 100%;
+    padding: 36px 0px;
+}
+.brand-logo-wrap {
+    width: 50%;
+}
+.brand-logo-wrap ul.flex {
+    flex-wrap: wrap;
+    gap:20px;
+}
+/* brand-logo-section */
+
+/* feature-section */
+.feature-section, .benefit-section, .our-stars-section, .foods-variety-section, .our-products-section, .ingredients-section, .footer-section {
+    width: 100%;
+    margin: 100px 0px;
+}
+.feature-wrap {
+    border-top: 2px solid var(--borderColor);
+    border-bottom: 2px solid var(--borderColor);
+    padding: 50px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+.feature-content-wrap.flex {
+    justify-content: start;
+}
+.feature-icon i {
+    color: var(--primaryColor);
+    font-size: 25px;
+    background: var(--bgColor);
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.feature-content h3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+}
+.feature-content p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color:var(--blackishColor)
+}
+/* feature-section */
+
+/* benefit-section */
+.benefit-content .title h2, .stars-content .title h2{
+    position:relative;
+}
+.benefit-content .title h2::after, .stars-content .title h2::after{
+    content: "";
+    background-image: url(../img/Polcadot.png);
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    z-index: -3;
+}
+.benefit-wrap.flex, .our-stars-wrap.flex {
+    gap: 80px;
+}
+.benefit-img, .benefit-content, .stars-content, .stars-img, .food-variety-img, .food-variety-content{
+    width:50%;
+}
+.benefit-img, .stars-img{
+    background-color: var(--bgColor);
+}
+.benefit-img img{
+    width:80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.benefit-content nav{
+    padding-bottom: 10px ;
+    display: block;
+    padding-top: 40px;
+}
+.benefit-content nav ul li{
+    padding-bottom: 10px ;
+    display: block;
+}
+.benefit-content nav ul li i{
+    color: var(--primaryColor);
+}
+.benefit-content nav ul li span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: var(--blackishColor);
+    padding-left: 10px;
+}
+/* benefit-section */
+
+.stars-img img{
+    width:86%;
+    display: block;
+    margin-left:auto;
+    margin-bottom: 70px;
+}
+.feedback{
+    padding: 40px 0px;
+}
+.single-feedback h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.41px;
+    color: var(--primaryColor);
+}
+.single-feedback p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px; 
+    padding-top: 10px;  
+}
+
+/* foods-variety-section */
+.foods-variety-section .title{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.food-variety{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.food-variety-img img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+.food-variety-content{
+    background-color: var(--bgColor);
+    height: 100%;
+    border:2px solid var(--primaryColor);
+}
+.food-details {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding: 0px 30px;
+}
+.food-details h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.73px;
+
+}
+.food-details p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    padding: 20px 0px;
+}
+.discover-btn{
+    background-color: var(--lightGreenColor);
+    color: var(--primaryColor);
+}
+.discover-btn i{
+    color: var(--primaryColor);
+}
+/* foods-variety-section */
+
+
+/* our-products-section */
+.our-products-section .title{
+    padding-bottom: 50px;
+}
+.our-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:40px;
+}
+.single-product{
+    border: 2px solid var(--borderColor);
+    text-align: center;
+    padding: 30px;
+    transition: 0.3s;
+}
+.single-product:hover{
+    border: 2px solid var(--primaryColor);
+}
+.product-img img {
+    width: 190px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.product-content h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    padding: 15px 0px;
+}
+.price h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    padding-bottom: 25px ;
+}
+.price .del-price{
+    color: var(--grayColor);
+}
+.price .present-price{
+    color: var(--primaryColor);
+    padding-left: 8px;
+}
+.buy-btn {
+    background-color: var(--whiteColor);
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    padding: 15px 35px;
+}
+.buy-btn i{
+    color: var(--primaryColor);
+    padding-left: 10px;
+}
+
+/* our-products-section */
+
+/* ingredients-section */
+.ingredients-wrap {
+    background-image: url(../img/ingredients.png);
+    width: 100%;
+    height: 459px;
+    justify-content: center;
+    text-align: center;
+}
+.ingredients-content{
+    padding: 0px 185px;
+}
+.ingredients-content h2{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72.61px;
+    color: var(--whiteColor);
+    padding-bottom: 30px;
+}
+/* ingredients-section */
+
+
+/* footer */
+.footer-section{
+    margin-bottom: 0px;
+}
+.pre-footer.flex, .footer-menu.flex {
+    align-items: start;
+    gap:50px;
+}
+.footer-logo, .footer-form{
+    width:35%;
+} 
+.footer-menu{
+    width:30%;
+    justify-content: center;
+} 
+.footer-logo p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: var(--blackishColor);
+    padding: 30px 0px;
+}
+.social-media ul li a i{
+    font-size: 20px;
+    color:var(--blackishColor);
+    transition: 0.3s;
+    padding-right: 20px ;
+}
+.social-media ul li a i:hover{
+    color:var(--primaryColor);
+}
+.about-menu, .Company-menu {
+    width: 50%;
+}
+.footer-menu h3, .footer-form h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    padding-bottom: 30px ;
+}
+.footer-menu nav ul li {
+    display: block;
+}
+.footer-menu nav ul li a, .footer-form p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    padding-bottom: 15px;
+    display: inline-block;
+    color: var(--blackishColor);
+    transform: 0.3s;
+}
+.footer-menu nav ul li a:hover {
+    color: var(--primaryColor);
+}
+
+form {
+    padding-top: 18px;
+    display: flex;
+}
+input#email {
+    background: var(--bgColor2);
+    border: none;
+    padding: 20px 15px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-transform: capitalize;
+}
+input[type="submit"] {
+    background: var(--primaryColor);
+    border: none;
+    padding: 20px 15px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: var(--whiteColor);
+    margin-left: 10px;
+}
+.footer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    padding: 80px 0px 40px;
+    color: var(--blackishColor);
+}
+/* footer */
