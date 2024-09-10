@@ -97,6 +97,7 @@ a{
 }
 .menu-bars, .close-btn{
     display:none;
+    cursor: pointer;
 }
 .mobile-menu{
     display:block;
@@ -524,6 +525,11 @@ input[type="submit"] {
     line-height: 16.94px;
     color: var(--whiteColor);
     margin-left: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: var(--blackishColor);
 }
 .footer p {
     font-size: 16px;
